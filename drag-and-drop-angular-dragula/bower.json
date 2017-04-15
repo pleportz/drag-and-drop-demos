@@ -1,0 +1,14 @@
+{
+  "name": "drag-and-drop-demos",
+  "description": "Drag and drop demos with AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pleportz/drag-and-drop",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "less": "~2.7.2",
+    "angular-dragula": "angularjs-dragula#^1.2.8"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drag & Drop with HTML5</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="drag-drop-header">
+      <h1>DRAG & DROP WITH HTML5</h1>
+    </div>
+
+    <div class="main-container">
+
+      <div class="item1"
+        draggable="true"
+        ondragstart="handleDragStart()"
+        >
+        DRAGGABLE ITEM
+      </div>
+      <div
+        class="item2"
+        ondragover="allowDrop(event)"
+        ondrop="handleDrop()"
+        ondragenter="colorize(this)"
+        ondragleave="uncolorize(this)"
+        >
+        DROP ZONE
+      </div>
+
+    </div>
+
+    <script>
+      allowDrop = (event) => {
+        event.preventDefault();
+      }
+      handleDragStart = () => {
+        console.log('Started Dragging !');
+      }
+      handleDrop = () => {
+        alert('Drop !');
+        console.log('Drop !');
+      }
+      colorize = (element) => {
+        element.className = element.className + ' dragging-over';
+      }
+      uncolorize = (element) => {
+        element.className = element.className.replace(' dragging-over', '');
+      }
+    </script>
+  </body>
+</html>
