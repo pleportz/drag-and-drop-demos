@@ -1,5 +1,4 @@
-# drag-and-drop-demos
-My drag and drop demos: 
+# Drag & Drop Demos
 
 - Drag & Drop with HTML5: 
 - Drag & Drop with Dragula and React: 
