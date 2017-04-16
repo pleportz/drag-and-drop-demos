@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drag & Drop - Dragula for React</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bower_components/react-dragula/dist/dragula.min.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div class="drag-drop-header">
+      <h1>DRAG & DROP - DRAGULA FOR REACT</h1>
+    </div>
+    <div id="anagram"></div>
+    <script src="bower_components/react-dragula/dist/react-dragula.js"></script>
+    <script type="text/babel">
+
+      class Anagram extends React.Component {
+        render() {
+          return <div className="anagram-container">
+              <div className="letter-outter-container">
+                <div className="letter-container">S</div>
+              </div>
+              <div className="letter-outter-container">
+                <div className="letter-container">M</div>
+              </div>
+              <div className="letter-outter-container">
+                <div className="letter-container">I</div>
+              </div>
+              <div className="letter-outter-container">
+                <div className="letter-container">L</div>
+              </div>
+              <div className="letter-outter-container">
+                <div className="letter-container">E</div>
+              </div>
+          </div>;
+        }
+        componentDidMount() {
+          var container = ReactDOM.findDOMNode(this);
+          reactDragula([container]);
+        }
+      };
+
+      ReactDOM.render(<Anagram/>, document.getElementById('anagram'));
+
+    </script>
+  </body>
+</html>

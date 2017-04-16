@@ -1,0 +1,37 @@
+body {
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+.drag-drop-header {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #26292e;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.anagram-container {
+  width: 450px;
+  margin: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.letter-outter-container {
+  display: inline-block;
+  height: 80px;
+  width: 90px;
+}
+
+.letter-container {
+  height: 80px;
+  line-height: 80px;
+  width: 80px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #b9bbbc;
+  border-radius: 4px;
+}

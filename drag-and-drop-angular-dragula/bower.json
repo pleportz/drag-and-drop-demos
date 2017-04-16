@@ -1,9 +1,5 @@
 {
-  "name": "drag-and-drop-demos",
-  "description": "Drag and drop demos with AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/pleportz/drag-and-drop",
-  "license": "MIT",
+  "name": "drag-and-drop-demo",
   "private": true,
   "dependencies": {
     "angular": "~1.5.0",

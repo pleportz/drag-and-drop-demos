@@ -2,9 +2,8 @@
   "name": "drag-and-drop-demos",
   "private": true,
   "version": "0.0.0",
-  "description": "Drag and drop demos with AngularJS",
-  "repository": "https://github.com/pleportz/drag-and-drop",
-  "license": "MIT",
+  "description": "Drag and drop demo with Dragula for Angular 1",
+  "repository": "https://github.com/pleportz/drag-and-drop-demos",
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0"
