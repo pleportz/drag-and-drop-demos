@@ -5,18 +5,19 @@
     <title>Drag & Drop - Dragula for React</title>
     <link rel="stylesheet" href="style.css">
     <link href="bower_components/react-dragula/dist/dragula.min.css" rel="stylesheet" type="text/css">
-    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   </head>
   <body>
+
     <div class="drag-drop-header">
       <h1>DRAG & DROP - DRAGULA FOR REACT</h1>
     </div>
     <div id="anagram"></div>
+
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <script src="bower_components/react-dragula/dist/react-dragula.js"></script>
     <script type="text/babel">
-
       class Anagram extends React.Component {
         render() {
           return <div className="anagram-container">
@@ -42,9 +43,7 @@
           reactDragula([container]);
         }
       };
-
       ReactDOM.render(<Anagram/>, document.getElementById('anagram'));
-
     </script>
   </body>
 </html>
