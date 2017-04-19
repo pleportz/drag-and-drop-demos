@@ -43,10 +43,10 @@
         alert('Drop !');
       }
       colorize = (element) => {
-        element.className = element.className + ' dragging-over';
+        element.classList.add('dragging-over');
       }
       uncolorize = (element) => {
-        element.className = element.className.replace(' dragging-over', '');
+        element.classList.remove('dragging-over');
       }
     </script>
   </body>
