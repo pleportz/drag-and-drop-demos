@@ -15,7 +15,7 @@
 
       <div class="item1"
         draggable="true"
-        ondragstart="handleDragStart()"
+        ondragstart="handleDragStart(event)"
         >
         DRAGGABLE ITEM
       </div>
@@ -35,7 +35,8 @@
       allowDrop = (event) => {
         event.preventDefault();
       }
-      handleDragStart = () => {
+      handleDragStart = (event) => {
+        event.dataTransfer.setData("text", 'this is the value of the dragged data');
         console.log('Started Dragging !');
       }
       handleDrop = () => {
